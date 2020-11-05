@@ -1,4 +1,4 @@
-# program na pisany na bazie kodu Roberta Górzyńskiego
+# program napisany na bazie kodu Roberta Górzyńskiego
 
 # zmienne początkowe
 liczba_paczek = 0

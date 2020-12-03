@@ -1,0 +1,61 @@
+uczen
+Marek Rudy
+1a
+wychowawca
+Zdzislaw Dyrma
+1a
+nauczyciel
+Michal Wolodyjowski
+historia
+1a
+1b
+2b
+
+uczen
+Jasiek Mlody
+1b
+wychowawca
+Janina Polzygmunta
+1b
+nauczyciel
+Adam Mickiewicz
+jezyk polski
+1b
+1a
+
+uczen
+Tomek Bialy
+1a
+wychowawca
+Zdzislawa Zona
+2a
+nauczyciel
+Maria Sklodowska
+biologia
+2a
+1a
+
+uczen
+Jarek Nieduzy
+2b
+wychowawca
+Barbara Bara
+2b
+nauczyciel
+Roman Pitagoras
+matematyka
+2b
+2a
+1b
+1a
+
+wychowawca
+Barbara Nos
+4b
+nauczyciel
+Roman Dlugi
+chemia
+3a
+
+
+

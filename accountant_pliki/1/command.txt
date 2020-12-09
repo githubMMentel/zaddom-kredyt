@@ -1,1 +1,1 @@
-python accountant.py konto < in.txt > out.txt
+python accountant.py saldo -50000 ZUS_dodatkowy

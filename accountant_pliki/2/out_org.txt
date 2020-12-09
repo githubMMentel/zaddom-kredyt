@@ -1,4 +1,4 @@
-saldo
+﻿saldo
 1000000
 wplata poczatkowa
 saldo
@@ -11,5 +11,9 @@ raspberry
 sprzedaz
 raspberry
 25000
+5
+zakup
+jetson
+40000
 5
 stop

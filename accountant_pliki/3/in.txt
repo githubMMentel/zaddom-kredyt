@@ -1,6 +1,6 @@
 saldo
 1000000
-wpłata początkowa
+wplata poczatkowa
 saldo
 -140000
 zus
@@ -16,4 +16,32 @@ zakup
 jetson
 40000
 5
+sprzedaz
+jetson
+50000
+4
+sprzedaz
+jetson
+4000
+1
+zakup
+jetson
+4000
+1
+zakup
+jetson
+40000
+1
+sprzedaz
+jetson
+4000
+1
+zakup
+jetson
+4000
+1
+sprzedaz
+jetson
+40000
+1
 stop

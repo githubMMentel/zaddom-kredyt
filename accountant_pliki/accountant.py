@@ -9,13 +9,10 @@ stan_mag = 0
 rejestr = list()
 magazyn = dict()
 
-    #import danych argv
-#for index, elem in enumerate(sys.argv):
-#    print("{}: {}".format(index, elem))
 print("")
     #import danych wejściowych
 while True:
-    linia = input()
+    linia = input() # fd readline / najpierw zaimportować na górze kodu
     if linia != "stop":
             # akcja
         if linia == "saldo":
@@ -69,7 +66,6 @@ if sys.argv[1] == "zakup": # kat.2
         sys.argv[1], id_prod, cena_prod, ile_prod)
     )
     stan_konta = stan_konta - (cena_prod * ile_prod)
-#    print(magazyn)
     if id_prod not in magazyn:
         magazyn[id_prod] = ile_prod
     else:
@@ -92,7 +88,6 @@ if sys.argv[1] == "sprzedaz": # kat. 3
     rejestr.append("{}\n{}\n{}\n{}".format(
         sys.argv[1], id_prod, cena_prod, ile_prod)
     )
-#    stan_konta = stan_konta + (cena_prod * ile_prod)
     if id_prod not in magazyn:
         magazyn[id_prod] = ile_prod
         print("Błąd - brak na magazynie")
@@ -103,14 +98,11 @@ if sys.argv[1] == "sprzedaz": # kat. 3
     else:
         print("Błąd - za mało na magazynie")
         print("Sprzedaż z argv niezrealizowana")
-#        break
     for x in rejestr:
-        print(x)
+        print(x) # pisać do pliku przez - fd write
         print("stop")
 
 if sys.argv[1] == "saldo": # kat. 1
-#    for stan_konta in rejestr:
-#        print("{}".format(stan_konta))
     print("{} saldo końcowe".format(stan_konta))
 
 if sys.argv[1] == "konto": # kat.5
@@ -125,16 +117,3 @@ if sys.argv[1] == "przeglad": # kat. 6
 print("")
 print("---")
 
-#print(rejestr)
-#print(stan_konta)
-
-#print(magazyn)
-#print(magazyn[id_prod], [ile_prod])
-#for id_prod in magazyn:
-#    print("{} {}".format(id_prod, ile_prod))
-
-
-#a = sys.argv[1] # akcja   saldo   zakup   sprzedaz    magazyn  konto   przeglad
-#b = sys.argv[2] # id_prod         jetson  jetson      jetson           0
-#c = sys.argv[3] # cena_prod       40000   50000       raspberry        1
-#d = sys.argv[4] # ile_prod        5       4           arduino

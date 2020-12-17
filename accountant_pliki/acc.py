@@ -67,6 +67,7 @@ def odczyt_z_pliku(sciezka):
 def zapis_do_pliku(sciezka, rejestr):
     fp = open(sciezka, "w")
     for linia in rejestr:
-        fp.write(linia + "\n") # spróbuj zrobić zapis z formatem
+        # fp.write(linia + "\n") # spróbuj zrobić zapis z formatem
+        fp.write("{}\n".format(linia)) # spróbowałem - pokazać Robertowi - ok
     fp.write("stop")
     fp.close()

@@ -3,7 +3,9 @@
 
 import csv
 from sys import argv
+
 # import re
+
 
 def odczyt():
     sciezka = argv[1]
@@ -16,18 +18,20 @@ def odczyt():
     fp.close()
     return zawartosc_pliku
 
+
 def zapis(kontakty):
     sciezka2 = argv[2]
     # sciezka2 = "addresses2.csv" # do zakomentowania po uruchomieniu linii 19
     fp = open(sciezka2, "w", newline="")
     writer = csv.writer(fp)
     writer.writerows(kontakty)
-    '''
+    """
     for line in kontakty:
         writer.writerow(kontakty)       # Zapytać Roberta, czy dobrze rozwiązana pętla
 
 #    writer.writerow(["a", "b", "c"])
-    '''
+    """
+
 
 def modyfikacja(kontakty, lista_zmian):
     for zmiana in lista_zmian:
@@ -35,7 +39,8 @@ def modyfikacja(kontakty, lista_zmian):
         kontakty[int(zmiana_lista[0])][int(zmiana_lista[1])] = zmiana_lista[2]
     return kontakty
 
-kontakty = odczyt() # lista, której elementy również są listami
+
+kontakty = odczyt()  # lista, której elementy również są listami
 kontakty = modyfikacja(kontakty, argv[3:])
 print(kontakty)
 zapis(kontakty)

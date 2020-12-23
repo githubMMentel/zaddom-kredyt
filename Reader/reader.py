@@ -22,7 +22,12 @@ def zapis(kontakty):
     fp = open(sciezka2, "w", newline="")
     writer = csv.writer(fp)
     writer.writerows(kontakty)
+    '''
+    for line in kontakty:
+        writer.writerow(kontakty)       # Zapytać Roberta, czy dobrze rozwiązana pętla
+
 #    writer.writerow(["a", "b", "c"])
+    '''
 
 def modyfikacja(kontakty, lista_zmian):
     for zmiana in lista_zmian:

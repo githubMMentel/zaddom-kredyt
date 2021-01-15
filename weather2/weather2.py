@@ -18,8 +18,8 @@ class WeatherForecast:
         return data_do_sprawdzenia
 
     def odczyt_API(self, force=False):
-        if os.path.exists("weather/pogoda.txt") and not force:
-            with open("weather/pogoda.txt", "r") as f:
+        if os.path.exists("../weather/pogoda.txt") and not force:
+            with open("../weather/pogoda.txt", "r") as f:
                 lst = json.loads(f.read())
                 print("wczytane z pogoda.txt")
         else:
@@ -33,7 +33,7 @@ class WeatherForecast:
                 "GET", url, headers=headers, params=querystring
             )
             lst = response.json()
-            fp = open("weather/pogoda.txt", "w")
+            fp = open("../weather/pogoda.txt", "w")
             fp.write(response.text)
             fp.close()
         return lst
